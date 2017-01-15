@@ -1,6 +1,8 @@
-.banner .nav li {
+.menu-item {
   @extend .nav-item;
 }
-.banner .nav a {
+.navbar-nav a {
   @extend .nav-link;
 }
+
+
