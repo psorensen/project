@@ -76,3 +76,5 @@ if (basename($stylesheet = get_option('template')) !== 'templates') {
     wp_redirect($_SERVER['REQUEST_URI']);
     exit();
 }
+
+
