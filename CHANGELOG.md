@@ -1,4 +1,9 @@
-### 9.0.0-beta.2: January 11th, 2016
+### 9.0.0-beta.2: January 19th, 2016
+* Fix Browersync ([#1815](https://github.com/roots/sage/pull/1815))
+* Add option to select CSS framework, add Foundation as an option ([#1813](https://github.com/roots/sage/pull/1813))
+* Add option to add Font Awesome ([#1812](https://github.com/roots/sage/pull/1812))
+* Add option to change theme file headers ([#1811](https://github.com/roots/sage/pull/1811))
+* Add option to remove Bootstrap ([#1810](https://github.com/roots/sage/pull/1810))
 * Remove Font Awesome ([#1809](https://github.com/roots/sage/pull/1809))
 * Remove grid defaults ([#1808](https://github.com/roots/sage/pull/1808))
 * Fix for `publicPath` ([#1806](https://github.com/roots/sage/pull/1806))
