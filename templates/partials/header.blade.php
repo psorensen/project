@@ -1,5 +1,5 @@
 <header class="banner">
-  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <nav class="navbar navbar-toggleable-md navbar-inverse">
 
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -13,4 +13,10 @@
     </div>
 
   </nav>
+  <div class="page-header mb-5">
+    <div class="container">
+      <h1>{!! App\title() !!}</h1>
+    </div>
+  </div>
+
 </header>

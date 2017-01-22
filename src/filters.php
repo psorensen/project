@@ -67,7 +67,7 @@ add_filter('comments_template', 'App\\template_path');
 
 
 
-//add_filter( 'charitable_use_campaign_template', '__return_false');
+add_filter( 'charitable_use_campaign_template', '__return_false');
 
 /**
  * Automatically mark all offline donations as Paid.
