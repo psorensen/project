@@ -18,6 +18,8 @@ add_filter('body_class', function (array $classes) {
         $classes[] = 'sidebar-primary';
     }
 
+    $classes[] = 'global';
+
     return $classes;
 });
 
@@ -81,3 +83,10 @@ function ed_auto_complete_offline_donation( $return, $donation_id ) {
     return $return;
 }
 add_filter( 'charitable_process_donation_offline', 'ed_auto_complete_offline_donation', 10, 2 );
+
+//add_filter( 'body_class', 'add_global_body_class' );
+//function add_global_body_class($classes) {
+//    $classes[] = 'global';
+//
+//    return $classes;
+//}

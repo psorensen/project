@@ -3,11 +3,14 @@
 }
 .navbar-nav a {
   @extend .nav-link;
+  font-size: 20px;
 }
 .banner {
-  background: rebeccapurple;
+  background: $purple;
   color: white;
+
 }
+
 
 .banner .navbar {
   background:transparent;
@@ -15,7 +18,7 @@
 
 .page-header {
   @extend .text-center;
-  padding: 5rem;
+  padding: 7rem;
 
   color: white;
 }

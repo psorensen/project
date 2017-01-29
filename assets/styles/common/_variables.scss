@@ -1,2 +1,13 @@
-// Colors
-$brand-primary:         #27ae60;
+$purple: #262262;
+$blue: #017BD2;
+$orange: #FF2700;
+.bg-blue {
+  background-color: $blue;
+  color: white;
+  background: $blue; /* Old browsers */
+  background: -moz-linear-gradient(left,  $blue 2%, lighten($blue, 2%) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  $blue 2%,lighten($blue, 2%) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  $blue 2%,lighten($blue, 2%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$blue', endColorstr='lighten($blue, 2%',GradientType=1 ); /* IE6-9 */
+
+}
