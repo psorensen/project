@@ -54,7 +54,7 @@ add_action('after_setup_theme', function () {
      * Enable HTML5 markup support
      * @link https://developer.wordpress.org/reference/functions/add_theme_support/#html5
      */
-    add_theme_support('html5', ['caption', 'comment-form', 'comment-list', 'gallery', 'search-form']);
+    add_theme_support('html5', ['caption','search-form']);
 
     /**
      * Enable selective refresh for widgets in customizer
@@ -130,7 +130,10 @@ add_action('after_setup_theme', function () {
         return new JsonManifest(config('assets.manifest'), config('assets.uri'));
     });
 
-    /**
+	add_image_size( 'card', 350, 350, true);
+	add_image_size( 'card', 350, 175, true);
+
+	/**
      * Add Blade to Sage container
      */
     sage()->singleton('sage.blade', function (ContainerContract $app) {
@@ -149,6 +152,7 @@ add_action('after_setup_theme', function () {
         return '<?= App\\asset_path(\''.trim($asset, '\'"').'\'); ?>';
     });
 });
+
 
 /**
  * Init config

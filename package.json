@@ -70,6 +70,9 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
+    "bourbon": "^4.3.0",
+    "font-awesome": "^4.7.0",
+    "fontawesome": "^4.7.2",
     "jquery": "1.12.4 - 3"
   }
 }

@@ -1,0 +1,72 @@
+
+// remove base form styling
+.charitable-login-form {
+  padding: 2rem;
+  margin: 0;
+  form {
+    margin: 0;
+    border: none;
+    padding: 0;
+  }
+}
+
+
+.wp-social-login-connect-with {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.wp-social-login-provider-list {
+  padding: 0;
+  .wp-social-login-provider {
+    display: block;
+    color: white;
+    // padding: 1rem;
+    margin-bottom: 1rem;
+    &:before {
+      display: inline-block;
+      padding: 1rem;
+      content: "\f1a0";
+      line-height: 1;
+      font-family: FontAwesome;
+      margin-right: 1rem;
+      padding-right: 1rem;
+      font-size: 1.5rem;
+      border-right: 2px solid rgba(255,255,255,0.1);
+
+    }
+  }
+  .wp-social-login-provider-facebook {
+    background-color: $facebook;
+    &:before {
+      content: "\f230";
+    }
+  }
+  .wp-social-login-provider-google {
+    background-color: $google;
+    &:before {
+      content: "\f1a0";
+    }
+  }
+  .wp-social-login-provider-twitter {
+    background-color: $twitter;
+    &:before {
+      content: "\f081";
+
+    }
+  }
+}
+
+.login_or {
+  margin: 0 auto;
+  margin-top: 130px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 15px;
+  color: $gray;
+  line-height: 48px;
+  text-align: center;
+  border: 1px solid $gray-light;
+}

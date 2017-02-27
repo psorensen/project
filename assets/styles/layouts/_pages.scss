@@ -1,0 +1,40 @@
+
+.story-section {
+  min-height: 600px;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+}
+.story-section--smoke {
+
+  * {
+    color: white;
+  }
+  background-image: url('../images/story/smoke.jpg');
+  background-size: cover;
+  background-position: right;
+}
+.story-section--carry {
+  background-image: url('../images/story/carry.jpg');
+  background-size: cover;
+  background-position: right;
+}
+.story-section--smile {
+
+  background-image: url('../images/story/smile2.jpg');
+  background-size: 35% auto;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.story-section--stove {
+  //margin-bottom: -150px;
+}
+.stove-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    width: 50%;
+    float: left;
+  }
+}

@@ -1,7 +1,9 @@
-@import "common/variables";
+@import url('https://fonts.googleapis.com/css?family=Lato|Varela+Round');
 
+@import "common/variables";
 // Import npm dependencies
 @import "~bootstrap/scss/bootstrap";
+@import "~font-awesome/scss/font-awesome";
 
 @import "common/global";
 @import "components/buttons";
@@ -12,7 +14,19 @@
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";
+@import "layouts/login";
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
 
+//@import "vendor/_hover-effects";
+.dropdown-item {
+  padding: 3px 1.5rem!important;
+}
+.dropdown-item.active, .dropdown-item:active {
+  color: white !important;
+}
+
+.btn:focus {
+  box-shadow: none;
+}

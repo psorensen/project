@@ -1,13 +1,45 @@
+// Vendor variables
+$fa-font-path:          '~font-awesome/fonts';
+
 $purple: #262262;
 $blue: #017BD2;
 $orange: #FF2700;
-.bg-blue {
-  background-color: $blue;
-  color: white;
-  background: $blue; /* Old browsers */
-  background: -moz-linear-gradient(left,  $blue 2%, lighten($blue, 2%) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left,  $blue 2%,lighten($blue, 2%) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right,  $blue 2%,lighten($blue, 2%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$blue', endColorstr='lighten($blue, 2%',GradientType=1 ); /* IE6-9 */
 
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              lighten($gray-base, 20%) !default;   // #333
+$gray:                   lighten($gray-base, 33.5%) !default; // #555
+$gray-light:             lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+
+$brand-primary:         $blue;
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+//$font-family-serif: 'Raleway', sans-serif;
+$font-family-serif: 'Varela Round', sans-serif;
+$font-family-sans-serif: 'Lato', sans-serif;
+//$font-family-sans-serif: 'Roboto', sans-serif;
+$headings-font-family: $font-family-serif;
+$headings-font-weight: 400;
+$badge-font-weight: 300;
+$headings-color: $gray-dark;
+$body-color: $gray-light;
+$breadcrumb-bg: transparent;
+
+
+// Social Colors
+$facebook: #3b5998;
+$twitter: #1da1f2;
+$google:  #d34836;
+
+$navbar-padding-x: 0;
+
+.caps {
+  text-transform: uppercase;
+}
+.btn {
+  @extend .px-3;
 }

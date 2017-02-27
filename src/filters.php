@@ -68,25 +68,13 @@ add_filter('template_include', function ($template) {
 add_filter('comments_template', 'App\\template_path');
 
 
+/** PJS ↓↓ */
+add_filter('excerpt_length', function($length) {
+	return 30;
+}, 999);
 
-add_filter( 'charitable_use_campaign_template', '__return_false');
 
-/**
- * Automatically mark all offline donations as Paid.
- *
- * @param   boolean $return
- * @param   int     $donation_id
- * @return  boolean
- */
-function ed_auto_complete_offline_donation( $return, $donation_id ) {
-    charitable_get_donation( $donation_id )->update_status( 'charitable-completed' );
-    return $return;
-}
-add_filter( 'charitable_process_donation_offline', 'ed_auto_complete_offline_donation', 10, 2 );
 
-//add_filter( 'body_class', 'add_global_body_class' );
-//function add_global_body_class($classes) {
-//    $classes[] = 'global';
-//
-//    return $classes;
-//}
+
+
+

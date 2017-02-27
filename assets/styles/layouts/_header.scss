@@ -3,22 +3,28 @@
 }
 .navbar-nav a {
   @extend .nav-link;
-  font-size: 20px;
+  margin-right: .5rem;
+}
+.page-header {
+  padding-top: 7rem;
+  padding-bottom: 7em;
+  * {
+    color: white;
+  }
 }
 .banner {
-  background: $purple;
-  color: white;
-
+  border-bottom: 1px solid $gray-lighter;
 }
-
-
-.banner .navbar {
-  background:transparent;
+.pgi-menu-highlight a {
+  @extend .btn;
+  @extend .btn-sm;
+  @extend .btn-outline-primary;
+  margin-top: 3px;
+  color: $blue!important;
+  @extend .ml-2;
 }
-
-.page-header {
-  @extend .text-center;
-  padding: 7rem;
-
-  color: white;
+.current-menu-ancestor > a,
+.current-page-parent > a,
+.current_page_item > a, {
+  color: $blue!important;
 }

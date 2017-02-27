@@ -94,6 +94,10 @@ function display_sidebar()
  */
 function title()
 {
+	global $post;
+	if (get_post_meta($post->ID, 'pgi_title_override', true)) {
+		return get_post_meta($post->ID, 'pgi_title_override', true);
+	}
     if (is_home()) {
         if ($home = get_option('page_for_posts', true)) {
             return get_the_title($home);

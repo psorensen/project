@@ -7,11 +7,5 @@
 @endsection
 
 @section('sidebar')
-
-    <div class="card">
-        <div class="card-block">
-            <h3>Sidebar</h3>
-            @php(charitable_template( 'content-campaign.php', array( 'content' => '', 'campaign' => charitable_get_current_campaign() ) ))
-        </div>
-    </div>
-    @endsection
+    @php(charitable_template( 'content-campaign.php', array( 'content' => '', 'campaign' => charitable_get_current_campaign() ) ))
+@endsection

@@ -46,7 +46,19 @@ array_map(function ($file) use ($sage_error) {
     if (!locate_template($file, true, true)) {
         $sage_error(sprintf(__('Error locating <code>%s</code> for inclusion.', 'sage'), $file), 'File not found');
     }
-}, ['helpers', 'setup', 'filters', 'admin', 'controllers/_projects', 'controllers/_global']);
+}, [
+	'helpers',
+	'setup',
+	'filters',
+	'admin',
+	'controllers/_projects',
+	'controllers/_global',
+	'controllers/_home',
+	'_enqueue',
+	'_bs-navwalker',
+	'_breadcrumbs',
+	'_taxonomies'
+]);
 
 /**
  * Here's what's happening with these hooks:
