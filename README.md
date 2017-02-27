@@ -46,6 +46,7 @@ During theme installation you will have the options to:
 * Update theme headers (theme name, description, author, etc.)
 * Select a CSS framework (Bootstrap, Foundation, none)
 * Add Font Awesome
+* Configure Browsersync (path to theme, local development URL)
 
 ## Theme structure
 
@@ -125,7 +126,7 @@ If you are not using [Bedrock](https://roots.io/bedrock/), update `publicPath` t
 
 ```json
 ...
-  "publicPath": "/wp-content/themes/sage/"
+  "publicPath": "/wp-content/themes/sage"
 ...
 ```
 
@@ -147,7 +148,7 @@ If you would like to force Browsersync to reload the page whenever certain file 
 
 Sage 8 documentation is available at [https://roots.io/sage/docs/](https://roots.io/sage/docs/).
 
-Sage 9 documention is currently in progress and can be viewed at [https://github.com/roots/docs/tree/sage-9/sage](https://github.com/roots/docs/tree/sage-9/sage).
+Sage 9 documentation is currently in progress and can be viewed at [https://github.com/roots/docs/tree/sage-9/sage](https://github.com/roots/docs/tree/sage-9/sage).
 
 ## Contributing
 

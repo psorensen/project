@@ -39,12 +39,13 @@
   },
   "scripts": {
     "test": [
-      "vendor/bin/phpcs"
+      "phpcs"
     ],
     "post-create-project-cmd": [
         "Roots\\Sage\\PostCreateProject::updateHeaders",
         "Roots\\Sage\\PostCreateProject::selectFramework",
-        "Roots\\Sage\\PostCreateProject::addFontAwesome"
+        "Roots\\Sage\\PostCreateProject::addFontAwesome",
+        "Roots\\Sage\\PostCreateProject::buildOptions"
     ]
   }
 }

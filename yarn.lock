@@ -963,6 +963,13 @@ cookie@0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.3.1.tgz#e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb"
 
+copy-globs-webpack-plugin@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/copy-globs-webpack-plugin/-/copy-globs-webpack-plugin-0.1.0.tgz#20123c42b4754342bbba249472eb7b88b9bc1c5c"
+  dependencies:
+    glob "^7.1.1"
+    loader-utils "^0.2.16"
+
 core-js@^2.4.0:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.4.1.tgz#4de911e667b0eae9124e34254b53aea6fc618d3e"
